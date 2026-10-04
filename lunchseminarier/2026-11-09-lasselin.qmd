@@ -1,0 +1,22 @@
+---
+title: "Human experimental endotoxemia: a controlled model of sickness behavior"
+speaker: "Dr. Julie Lasselin"
+date: 2026-11-09
+time: "12:15–13:00"
+location: "Stockholms universitet, Albanohus 4, plan 3: Jordgubbe"
+location_en: "Stockholm University, Albano House 4, floor 3: Jordgubbe"
+image: ../images/talks/2026-11-09-lasselin.jpg
+status: kommande   # kommande = upcoming, tidigare = past. Change to "tidigare" after the talk.
+---
+
+![](../images/talks/2026-11-09-lasselin.jpg){.talk-photo fig-alt="Dr. Julie Lasselin"}
+
+**Talare / Speaker:** Dr. Julie Lasselin
+**Datum / Date:** Måndag 9 november 2026 / Monday 9 November 2026, 12:15–13:00
+**Plats / Venue:** Stockholms universitet, Albanohus 4, plan 3: Jordgubbe / Stockholm University, Albano House 4, floor 3: Jordgubbe
+**Online:** [Zoom](https://umu.zoom.us/j/6429428957)
+
+Välkommen att delta på plats eller online. Föredraget är kostnadsfritt.
+*Join us on site or online. The talk is free of charge.*
+
+<!-- After the talk: change status to "tidigare" above and add e.g. [Inspelning / Recording](https://...) -->

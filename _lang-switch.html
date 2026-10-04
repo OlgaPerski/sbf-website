@@ -1,0 +1,78 @@
+<script>
+// Swedish <-> English language switching.
+// Every Swedish page is paired with an English page below. The navbar is defined once
+// (in Swedish) in _quarto.yml; on English pages this script relabels it and points it at
+// the English pages, and the "English"/"Svenska" link always goes to the matching page.
+// To add a new page pair, add a line to PAIRS (and to the navbar in _quarto.yml).
+(function () {
+  var PAIRS = [
+    // [Swedish page, English page, English menu label]
+    ["index",           "en/index",       "Home"],
+    ["om",              "en/about",       "About"],
+    ["lunchseminarier", "en/lunch-talks", "Lunch talks"],
+    ["nyheter",         "en/news",        "News"],
+    ["medlemskap",      "en/membership",  "Membership"],
+    ["resurser",        "en/resources",   "Resources"],
+    ["kontakt",         "en/contact",     "Contact"]
+  ];
+  // Pages without a direct translation (single news posts / talks) go to the listing page.
+  var SECTIONS = [["nyheter/", "en/news"], ["lunchseminarier/", "en/lunch-talks"]];
+
+  var brand = document.querySelector(".navbar-brand");
+  if (!brand) return;
+  var root = new URL("./", new URL(brand.getAttribute("href") || "./", location.href));
+
+  function relOf(url) {
+    var p = decodeURIComponent(url.pathname.slice(root.pathname.length));
+    p = p.replace(/\.html$/, "").replace(/(^|\/)$/, "$1index");
+    return p;
+  }
+  function urlOf(rel) { return new URL(rel + ".html", root).href; }
+
+  var here = relOf(location);
+  var isEn = (document.documentElement.lang || "").indexOf("en") === 0;
+
+  function counterpart(rel) {
+    for (var i = 0; i < PAIRS.length; i++) {
+      if (PAIRS[i][0] === rel) return PAIRS[i][1];
+      if (PAIRS[i][1] === rel) return PAIRS[i][0];
+    }
+    for (var j = 0; j < SECTIONS.length; j++) {
+      if (rel.indexOf(SECTIONS[j][0]) === 0) return SECTIONS[j][1];
+    }
+    return rel.indexOf("en/") === 0 ? "index" : "en/index";
+  }
+
+  document.querySelectorAll(".navbar a.nav-link").forEach(function (a) {
+    var href = a.getAttribute("href");
+    if (!href || /^(https?:|mailto:|#)/.test(href)) return;
+    var rel = relOf(new URL(href, location.href));
+    var label = a.querySelector(".menu-text") || a;
+
+    // The language toggle (in _quarto.yml it points at en/index.qmd)
+    if (rel === "en/index") {
+      var target = counterpart(here);
+      a.href = urlOf(target);
+      a.setAttribute("hreflang", isEn ? "sv" : "en");
+      a.setAttribute("lang", isEn ? "sv" : "en");
+      a.classList.remove("active");
+      a.classList.add("lang-toggle");
+      label.textContent = isEn ? "Svenska" : "English";
+      return;
+    }
+
+    if (!isEn) return;
+    for (var i = 0; i < PAIRS.length; i++) {
+      if (PAIRS[i][0] === rel) {
+        a.href = urlOf(PAIRS[i][1]);
+        label.textContent = PAIRS[i][2];
+        var active = here === PAIRS[i][1];
+        a.classList.toggle("active", active);
+        if (active) a.setAttribute("aria-current", "page");
+      }
+    }
+  });
+
+  if (isEn) document.querySelectorAll(".navbar-brand").forEach(function (b) { b.href = urlOf("en/index"); });
+})();
+</script>

@@ -1,0 +1,12 @@
+```{=html}
+<div class="board-grid">
+<% for (const item of items) { %>
+  <div class="board-card">
+    <img src="<%= templateParams.root %><%= item.photo %>" alt="<%= item.name %>">
+    <span class="name"><%= item.name %></span>
+    <span class="role"><%= templateParams.lang === 'en' ? item.role_en : item.role_sv %></span>
+    <% if (item.affiliation) { %><span class="affil"><%= item.affiliation %></span><% } %>
+  </div>
+<% } %>
+</div>
+```

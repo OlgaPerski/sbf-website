@@ -1,0 +1,42 @@
+---
+title: "Lunch talks"
+subtitle: "Talks on current research and clinical practice in behavioural medicine"
+listing:
+  - id: upcoming
+    contents: "../lunchseminarier/*.qmd"
+    include:
+      status: kommande
+    template: ../_talks.ejs
+    template-params:
+      lang: en
+    sort: "date asc"
+    date-format: "dddd D MMMM YYYY"
+  - id: past
+    contents: "../lunchseminarier/*.qmd"
+    include:
+      status: tidigare
+    type: table
+    sort: "date desc"
+    fields: [date, title, speaker]
+    field-display-names:
+      date: Date
+      title: Talk
+      speaker: Speaker
+    date-format: "D MMM YYYY"
+    sort-ui: false
+    filter-ui: true
+---
+
+The lunch talks of the Swedish Society of Behavioural Medicine are held at universities across Sweden. You are warmly welcome to join either on site or online. The talks are free of charge.
+
+[Join via Zoom](https://umu.zoom.us/j/6429428957){.btn-sbf} [Contact us](contact.qmd){.btn-sbf .btn-outline}
+
+## Upcoming talks
+
+::: {#upcoming}
+:::
+
+## Past talks
+
+::: {#past}
+:::

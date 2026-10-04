@@ -1,0 +1,25 @@
+---
+title: "Resurser"
+---
+
+## Internationella organisationer
+
+- [International Society of Behavioral Medicine (ISBM)](https://www.isbm.info/)
+- [European Health Psychology Society (EHPS)](https://ehps.net/)
+- [Society of Behavioral Medicine (SBM)](https://www.sbm.org/)
+
+## Tidskrifter
+
+- [International Journal of Behavioral Medicine](https://link.springer.com/journal/12529)
+- [Annals of Behavioral Medicine](https://academic.oup.com/abm)
+- [Journal of Behavioral Medicine](https://link.springer.com/journal/10865)
+
+## Utbildning i Sverige
+
+::: {.todo}
+**TODO:** Lägg till kurser och program inom beteendemedicin vid svenska lärosäten.
+:::
+
+## Föreningsdokument
+
+- Stadgar – se [Om föreningen](om.qmd#stadgar-och-årsmöten)

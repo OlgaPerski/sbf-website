@@ -1,0 +1,40 @@
+---
+title: "Om föreningen"
+listing:
+  id: styrelse-lista
+  contents: styrelse.yml
+  template: _board.ejs
+  template-params:
+    lang: sv
+    root: ""
+---
+
+## Vad är beteendemedicin?
+
+Beteendemedicin är ett tvärvetenskapligt område som studerar hur biologiska, psykologiska, sociala och beteendemässiga faktorer samverkar och påverkar hälsa och sjukdom. Kunskapen används för att förebygga sjukdom, främja hälsa och förbättra behandling och rehabilitering.
+
+## Om SBF
+
+Svensk Beteendemedicinsk Förening (SBF) är ett nätverk för forskare och kliniker inom bland annat psykologi, medicin, sociologi, socialt arbete, fysioterapi och vårdvetenskap. Föreningen arbetar för att:
+
+- sprida kunskap om beteendemedicin i forskning, vård och utbildning
+- främja samarbete mellan yrkesgrupper och discipliner
+- stödja utbildning och nästa generations forskare och kliniker inom fältet
+
+::: {.todo}
+**TODO:** Lägg till t.ex. när föreningen grundades och koppling till International Society of Behavioral Medicine (ISBM).
+:::
+
+## Styrelse
+
+::: {#styrelse-lista}
+:::
+
+::: {.todo}
+**TODO:** Lägg till lärosäte/arbetsplats och porträtt i `styrelse.yml` (porträtt i mappen `images/board/`).
+:::
+
+## Stadgar och årsmöten
+
+- Stadgar (PDF) – *kommer snart* <!-- TODO: lägg PDF:en i images/ eller docs/ och länka hit -->
+- Protokoll från årsmöten – *kommer snart*

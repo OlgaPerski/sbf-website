@@ -1,0 +1,19 @@
+---
+title: "Contact"
+---
+
+Would you like to know more about the society, suggest a lunch talk or join our mailing list? Get in touch!
+
+**Email:** [TODO@example.se](mailto:TODO@example.se)
+
+## Follow us
+
+- [Facebook group](https://www.facebook.com/groups/121323624602350/)
+
+::: {.todo}
+**TODO:** Add the society's email address, and possibly LinkedIn/Bluesky and a mailing list sign-up link.
+:::
+
+## The board
+
+See the board members under [About the society](about.qmd#board).

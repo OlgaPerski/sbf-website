@@ -1,0 +1,50 @@
+---
+pagetitle: "Svensk Beteendemedicinsk Förening"
+title-block-style: none
+listing:
+  id: senaste
+  contents: nyheter/*.qmd
+  type: grid
+  sort: "date desc"
+  max-items: 3
+  fields: [date, title, description]
+  date-format: "D MMMM YYYY"
+---
+
+::: {.hero}
+# Beteendemedicin – där beteende, psykologi och hälsa möts
+
+[Svensk Beteendemedicinsk Förening (SBF) är ett tvärvetenskapligt nätverk för forskare och kliniker som arbetar med hur beteende, psykologiska och sociala faktorer påverkar hälsa och sjukdom.]{.lead}
+
+[Bli medlem](medlemskap.qmd){.btn-sbf} [Kommande lunchseminarier](lunchseminarier.qmd){.btn-sbf .btn-outline}
+:::
+
+::: {.feature-grid}
+::: {.feature}
+### Lunchseminarier
+Korta digitala föredrag där forskare och kliniker presenterar aktuellt arbete inom beteendemedicin.
+
+[Se programmet →](lunchseminarier.qmd)
+:::
+
+::: {.feature}
+### Nätverk
+Vi samlar psykologer, läkare, fysioterapeuter, sjuksköterskor, sociologer och andra yrkesgrupper.
+
+[Om föreningen →](om.qmd)
+:::
+
+::: {.feature}
+### Nyheter
+Konferenser, utlysningar, kurser och annat som är på gång inom fältet.
+
+[Läs nyheter →](nyheter.qmd)
+:::
+:::
+
+## Senaste nytt
+
+::: {#senaste}
+:::
+
+[Alla nyheter →](nyheter.qmd)

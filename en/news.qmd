@@ -1,0 +1,12 @@
+---
+title: "News"
+listing:
+  contents: ../nyheter/*.qmd
+  type: default
+  sort: "date desc"
+  categories: true
+  fields: [date, title, description, categories]
+  date-format: "D MMMM YYYY"
+---
+
+*News posts are mostly written in Swedish.*

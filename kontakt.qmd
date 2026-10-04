@@ -1,0 +1,19 @@
+---
+title: "Kontakt"
+---
+
+Vill du veta mer om föreningen, föreslå ett lunchseminarium eller få våra utskick? Hör av dig!
+
+**E-post:** [TODO@exempel.se](mailto:TODO@exempel.se)
+
+## Följ oss
+
+- [Facebookgrupp](https://www.facebook.com/groups/121323624602350/)
+
+::: {.todo}
+**TODO:** Lägg till föreningens e-postadress, och eventuellt LinkedIn/Bluesky och en länk för att prenumerera på utskick.
+:::
+
+## Styrelsen
+
+Kontaktuppgifter till styrelsen finns under [Om föreningen](om.qmd#styrelse).

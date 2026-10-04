@@ -1,0 +1,42 @@
+---
+title: "Lunchseminarier"
+subtitle: "Föredrag om aktuell forskning och klinik inom beteendemedicin"
+listing:
+  - id: kommande
+    contents: "lunchseminarier/*.qmd"
+    include:
+      status: kommande
+    template: _talks.ejs
+    template-params:
+      lang: sv
+    sort: "date asc"
+    date-format: "dddd D MMMM YYYY"
+  - id: tidigare
+    contents: "lunchseminarier/*.qmd"
+    include:
+      status: tidigare
+    type: table
+    sort: "date desc"
+    fields: [date, title, speaker]
+    field-display-names:
+      date: Datum
+      title: Föredrag
+      speaker: Talare
+    date-format: "D MMM YYYY"
+    sort-ui: false
+    filter-ui: true
+---
+
+SBF:s lunchseminarier hålls vid olika lärosäten runt om i Sverige. Du är varmt välkommen att delta på plats eller online. Seminarierna är kostnadsfria.
+
+[Delta via Zoom](https://umu.zoom.us/j/6429428957){.btn-sbf} [Kontakta oss](kontakt.qmd){.btn-sbf .btn-outline}
+
+## Kommande seminarier
+
+::: {#kommande}
+:::
+
+## Tidigare seminarier
+
+::: {#tidigare}
+:::

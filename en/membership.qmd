@@ -1,0 +1,31 @@
+---
+title: "Membership"
+---
+
+Membership of SBF is open to everyone who works in or is interested in behavioural medicine: researchers, clinicians, PhD students and students, including international colleagues based in Sweden.
+
+## As a member you get
+
+- invitations to the society's lunch talks and other activities
+- a newsletter with conferences, funding calls and courses
+- a network of colleagues across disciplines
+- a say in the society's activities through the annual meeting
+
+::: {.todo}
+**TODO:** Confirm the benefits above, e.g. whether SBF membership gives discounts with ISBM or at conferences.
+:::
+
+## Fee
+
+| Category | Annual fee |
+|---|---|
+| Regular member | TODO SEK |
+| Student / PhD student | TODO SEK |
+
+## How to join
+
+1. Fill in the [membership form](#) <!-- TODO: link to form (e.g. Google/Microsoft Forms) -->
+2. Pay the fee to bankgiro/Swish **TODO**, stating your name.
+3. You will receive a confirmation by email.
+
+[Become a member](#){.btn-sbf}

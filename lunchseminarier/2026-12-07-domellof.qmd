@@ -1,0 +1,22 @@
+---
+title: "Sensory-motor function in autism"
+speaker: "Dr. Erik Domellöf"
+date: 2026-12-07
+time: "12:15–13:00"
+location: "Umeå universitet, Beteendevetarhuset, konferensrummet"
+location_en: "Umeå University, Beteendevetarhuset, the conference room"
+image: ../images/talks/2026-12-07-domellof.jpg
+status: kommande   # kommande = upcoming, tidigare = past. Change to "tidigare" after the talk.
+---
+
+![](../images/talks/2026-12-07-domellof.jpg){.talk-photo fig-alt="Dr. Erik Domellöf"}
+
+**Talare / Speaker:** Dr. Erik Domellöf
+**Datum / Date:** Måndag 7 december 2026 / Monday 7 December 2026, 12:15–13:00
+**Plats / Venue:** Umeå universitet, Beteendevetarhuset, konferensrummet / Umeå University, Beteendevetarhuset, the conference room
+**Online:** [Zoom](https://umu.zoom.us/j/6429428957)
+
+Välkommen att delta på plats eller online. Föredraget är kostnadsfritt.
+*Join us on site or online. The talk is free of charge.*
+
+<!-- After the talk: change status to "tidigare" above and add e.g. [Inspelning / Recording](https://...) -->

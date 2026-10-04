@@ -1,0 +1,36 @@
+---
+title: "About the society"
+listing:
+  id: board-list
+  contents: ../styrelse.yml
+  template: ../_board.ejs
+  template-params:
+    lang: en
+    root: "../"
+---
+
+## What is behavioural medicine?
+
+Behavioural medicine is an interdisciplinary field that studies how biological, psychological, social and behavioural factors interact to influence health and illness. This knowledge is used to prevent disease, promote health and improve treatment and rehabilitation.
+
+## About SBF
+
+The Swedish Society of Behavioural Medicine (SBF) is a network of researchers and clinicians from fields including psychology, medicine, sociology, social work, physiotherapy and health sciences. The society aims to:
+
+- disseminate knowledge about behavioural medicine in research, healthcare and education
+- promote collaboration across professions and disciplines
+- support education and the next generation of researchers and clinicians in the field
+
+::: {.todo}
+**TODO:** Add e.g. when the society was founded and its relationship to the International Society of Behavioral Medicine (ISBM).
+:::
+
+## Board
+
+::: {#board-list}
+:::
+
+## Statutes and annual meetings
+
+- Statutes (PDF, in Swedish) – *coming soon*
+- Minutes from annual meetings – *coming soon*

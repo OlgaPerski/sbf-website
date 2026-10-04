@@ -1,0 +1,10 @@
+---
+title: "Välkommen till vår nya webbplats!"
+date: 2026-10-04
+description: "SBF har fått en ny webbplats med information om lunchseminarier, medlemskap och nyheter inom beteendemedicin."
+categories: [Föreningen]
+---
+
+Svensk Beteendemedicinsk Förening har fått en ny webbplats. Här hittar du information om våra [lunchseminarier](../lunchseminarier.qmd), hur du [blir medlem](../medlemskap.qmd) och nyheter från fältet.
+
+Har du tips på något som borde finnas här? [Hör av dig](../kontakt.qmd)!

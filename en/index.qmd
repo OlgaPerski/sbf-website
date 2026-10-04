@@ -1,0 +1,50 @@
+---
+pagetitle: "Swedish Society of Behavioural Medicine"
+title-block-style: none
+listing:
+  id: latest
+  contents: ../nyheter/*.qmd
+  type: grid
+  sort: "date desc"
+  max-items: 3
+  fields: [date, title, description]
+  date-format: "D MMMM YYYY"
+---
+
+::: {.hero}
+# Behavioural medicine – where behaviour, psychology and health meet
+
+[The Swedish Society of Behavioural Medicine (Svensk Beteendemedicinsk Förening, SBF) is an interdisciplinary network for researchers and clinicians working on how behavioural, psychological and social factors influence health and illness.]{.lead}
+
+[Become a member](membership.qmd){.btn-sbf} [Upcoming lunch talks](lunch-talks.qmd){.btn-sbf .btn-outline}
+:::
+
+::: {.feature-grid}
+::: {.feature}
+### Lunch talks
+Short online talks where researchers and clinicians present current work in behavioural medicine.
+
+[See the programme →](lunch-talks.qmd)
+:::
+
+::: {.feature}
+### Network
+We bring together psychologists, physicians, physiotherapists, nurses, sociologists and other professions.
+
+[About the society →](about.qmd)
+:::
+
+::: {.feature}
+### News
+Conferences, funding calls, courses and other things happening in the field.
+
+[Read the news →](news.qmd)
+:::
+:::
+
+## Latest news
+
+::: {#latest}
+:::
+
+[All news →](news.qmd) *(news posts are mostly in Swedish)*

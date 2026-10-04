@@ -1,0 +1,53 @@
+# Board members – shown on both om.qmd (Swedish) and en/about.qmd (English).
+# Edit here only. Put photos in images/board/ and set `photo: images/board/filename.jpg`.
+# `affiliation` is optional – leave it out or empty to hide it.
+- name: "Erik Olsson"
+  role_sv: "Ordförande"
+  role_en: "Chair"
+  affiliation: ""
+  photo: images/person-placeholder.svg
+- name: "Cecilia Stenfors"
+  role_sv: "Vice ordförande"
+  role_en: "Vice chair"
+  affiliation: ""
+  photo: images/person-placeholder.svg
+- name: "Olga Perski"
+  role_sv: "Sekreterare"
+  role_en: "Secretary"
+  affiliation: "Stockholms universitet"
+  photo: images/person-placeholder.svg
+- name: "Anne H. Berman"
+  role_sv: "Kassör"
+  role_en: "Treasurer"
+  affiliation: ""
+  photo: images/person-placeholder.svg
+- name: "Linus Andersson"
+  role_sv: "Ledamot"
+  role_en: "Board member"
+  affiliation: ""
+  photo: images/person-placeholder.svg
+- name: "Pär Nyström"
+  role_sv: "Ledamot"
+  role_en: "Board member"
+  affiliation: ""
+  photo: images/person-placeholder.svg
+- name: "Nina Lind Ranneberg"
+  role_sv: "Ledamot"
+  role_en: "Board member"
+  affiliation: ""
+  photo: images/person-placeholder.svg
+- name: "Jazmin Soto"
+  role_sv: "Early Career Researcher Network"
+  role_en: "Early Career Researcher Network"
+  affiliation: ""
+  photo: images/person-placeholder.svg
+- name: "Nadejda Baraznenok"
+  role_sv: "Early Career Researcher Network"
+  role_en: "Early Career Researcher Network"
+  affiliation: ""
+  photo: images/person-placeholder.svg
+- name: "Felicia Sundström"
+  role_sv: "Suppleant"
+  role_en: "Deputy board member"
+  affiliation: ""
+  photo: images/person-placeholder.svg

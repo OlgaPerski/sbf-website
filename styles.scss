@@ -1,0 +1,206 @@
+/*-- scss:defaults --*/
+
+// Visual identity taken from SBF's logo and documents (e.g. årsmötesprotokoll):
+//  - body text in Bodoni (Bodoni MT in Word -> Bodoni Moda on the web)
+//  - titles in Gill Sans capitals (falls back to Cabin, a Gill/Johnston-inspired web font)
+//  - greyscale palette from the logo: light grey circle, warm grey line, black lettering
+@import url('https://fonts.googleapis.com/css2?family=Bodoni+Moda:ital,opsz,wght@0,6..96,400..700;1,6..96,400&family=Cabin:wght@400;500;600&display=swap');
+
+$sbf-ink:        #1a1a1a;   // logo lettering
+$sbf-line:       #a29e9d;   // logo line (decorative only – too light for text)
+$sbf-circle:     #edeced;   // logo circle
+$sbf-paper:      #f7f6f6;   // light background panels
+$sbf-muted:      #5f5b5a;   // secondary text (warm grey, AA contrast on white)
+
+$sbf-sans: "Gill Sans", "Gill Sans MT", "Cabin", "Segoe UI", sans-serif;
+$sbf-serif: "Bodoni Moda", "Bodoni MT", "Didot", Georgia, serif;
+
+$primary:                 $sbf-ink;
+$body-color:              $sbf-ink;
+$link-color:              $sbf-ink;
+$link-hover-color:        $sbf-muted;
+$font-family-sans-serif:  $sbf-serif;   // Bootstrap's "base" font -> body text in Bodoni
+$headings-font-family:    $sbf-sans;
+$headings-font-weight:    400;
+$font-size-root:          18px;
+$line-height-base:        1.6;
+
+$navbar-bg:               #ffffff;
+$navbar-fg:               $sbf-ink;
+$navbar-hl:               $sbf-ink;
+$footer-bg:               $sbf-paper;
+$footer-fg:               $sbf-muted;
+
+/*-- scss:rules --*/
+
+body {
+  font-optical-sizing: auto;
+  -webkit-font-smoothing: antialiased;
+}
+
+// ---- Navbar ----
+.navbar {
+  border-bottom: 1px solid $sbf-circle;
+  font-family: $sbf-sans;
+  .navbar-brand-container { max-width: none; flex-shrink: 0; }
+  .navbar-logo { max-height: 28px; width: auto; max-width: none; }
+  .nav-link {
+    text-transform: uppercase;
+    white-space: nowrap;
+    letter-spacing: .06em;
+    font-size: .8rem;
+  }
+  .nav-link.active { text-decoration: underline; text-decoration-color: $sbf-line; text-underline-offset: 6px; text-decoration-thickness: 2px; }
+  @media (max-width: 400px) { .navbar-logo { max-height: 22px; } }
+}
+
+// ---- Headings ----
+h1, .h1, .title {
+  font-family: $sbf-sans;
+  text-transform: uppercase;
+  letter-spacing: .08em;
+  font-weight: 400;
+}
+h2, h3, h4, h5 { font-family: $sbf-sans; font-weight: 400 !important; letter-spacing: .02em; }
+h2 {
+  margin-top: 2.4rem;
+  border-bottom: none !important;
+  &::after {
+    content: "";
+    display: block;
+    width: 2.5rem;
+    border-bottom: 2px solid $sbf-line;
+    margin-top: .4rem;
+  }
+}
+.subtitle { font-family: $sbf-serif; font-style: italic; color: $sbf-muted; }
+
+a { text-underline-offset: 3px; text-decoration-color: $sbf-line; }
+a:hover { text-decoration-color: $sbf-ink; }
+
+// ---- Hero on the home pages (emblem from the logo on the right) ----
+.hero {
+  background: $sbf-paper url("images/emblem.png") no-repeat right 3rem center / 170px auto;
+  padding: 3.5rem 2.5rem;
+  padding-right: 15rem;
+  min-height: 260px;
+  margin: 1rem 0 2.5rem;
+  h1 { font-size: 1.9rem; line-height: 1.3; margin: 0 0 1.2rem; }
+  p.lead, .lead { font-size: 1.2rem; max-width: 38rem; display: block; }
+  @media (max-width: 991px) {
+    background-image: none;
+    padding: 2rem 1.25rem;
+    h1 { font-size: 1.45rem; }
+  }
+}
+
+// ---- Buttons ----
+.btn-sbf {
+  display: inline-block;
+  background: $sbf-ink;
+  color: #fff !important;
+  font-family: $sbf-sans;
+  text-transform: uppercase;
+  letter-spacing: .08em;
+  font-size: .8rem;
+  padding: .7rem 1.3rem;
+  border: 1.5px solid $sbf-ink;
+  text-decoration: none;
+  margin: .25rem .5rem .25rem 0;
+  &:hover { background: #fff; color: $sbf-ink !important; }
+  &.btn-outline {
+    background: transparent;
+    color: $sbf-ink !important;
+    &:hover { background: $sbf-ink; color: #fff !important; }
+  }
+}
+
+// ---- Three-column feature cards ----
+.feature-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 1.75rem;
+  margin: 1.5rem 0 2rem;
+}
+.feature {
+  border-top: 2px solid $sbf-line;
+  padding-top: 1rem;
+  h3 { font-size: 1rem; text-transform: uppercase; letter-spacing: .08em; margin-top: 0; }
+  p { font-size: .95rem; margin-bottom: .5rem; }
+}
+
+// ---- Board member cards ----
+.board-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(180px, 1fr));
+  gap: 1.75rem 1.25rem;
+  margin: 1.5rem 0;
+}
+.board-card {
+  text-align: center;
+  img {
+    width: 120px; height: 120px;
+    object-fit: cover;
+    border-radius: 50%;
+    background: $sbf-circle;
+    margin-bottom: .6rem;
+    filter: grayscale(100%);
+  }
+  .name { font-family: $sbf-sans; font-weight: 600; display: block; }
+  .role {
+    font-family: $sbf-sans;
+    color: $sbf-muted;
+    text-transform: uppercase;
+    letter-spacing: .06em;
+    font-size: .72rem;
+    display: block;
+    margin-top: .15rem;
+  }
+  .affil { color: $sbf-muted; font-size: .85rem; font-style: italic; display: block; }
+}
+
+// ---- Callout used for TODO placeholders (remove once content is filled in) ----
+.todo {
+  background: #fff8e1;
+  border-left: 3px solid #d4a017;
+  padding: .6rem 1rem;
+  font-size: .9rem;
+  font-family: $sbf-sans;
+}
+
+// ---- Tables & listings ----
+table thead th, .quarto-listing .listing-title, .listing-date, .quarto-category {
+  font-family: $sbf-sans;
+}
+table thead th { text-transform: uppercase; letter-spacing: .06em; font-size: .78rem; font-weight: 400; }
+.quarto-category { border-color: $sbf-line !important; color: $sbf-muted !important; }
+
+// Footer
+.nav-footer { font-family: $sbf-sans; font-size: .85rem; }
+
+// ---- Lunch talk cards (upcoming talks, _talks.ejs) ----
+.talk-list { display: flex; flex-direction: column; gap: 1rem; margin: 1.25rem 0 2rem; }
+.talk-card {
+  display: flex;
+  gap: 1.25rem;
+  align-items: center;
+  padding: 1rem;
+  background: $sbf-paper;
+  color: $sbf-ink !important;
+  text-decoration: none;
+  border-left: 3px solid $sbf-line;
+  transition: border-color .15s;
+  &:hover { border-left-color: $sbf-ink; }
+  img { width: 110px; height: 110px; object-fit: cover; border-radius: 50%; flex-shrink: 0; }
+  .talk-body > span { display: block; }
+  .talk-date { font-family: $sbf-sans; text-transform: uppercase; letter-spacing: .06em; font-size: .75rem; color: $sbf-muted; }
+  .talk-title { font-family: $sbf-sans; font-size: 1.2rem; line-height: 1.3; margin: .2rem 0 .3rem; }
+  .talk-speaker { font-weight: 600; }
+  .talk-location { font-size: .9rem; font-style: italic; color: $sbf-muted; }
+  @media (max-width: 576px) {
+    align-items: flex-start;
+    img { width: 72px; height: 72px; }
+    .talk-title { font-size: 1.05rem; }
+  }
+}
+.talk-photo, p:has(> .talk-photo) img { width: 180px; height: 180px; object-fit: cover; border-radius: 50%; }

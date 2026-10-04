@@ -1,0 +1,15 @@
+```{=html}
+<div class="talk-list">
+<% for (const item of items) { %>
+  <a class="talk-card" href="<%- item.path %>" <%= metadataAttrs(item) %>>
+    <% if (item.image) { %><img src="<%- item.image %>" alt="<%= item.speaker %>"><% } %>
+    <div class="talk-body">
+      <span class="talk-date"><%= item.date %><% if (item.time) { %> · <%= item.time %><% } %></span>
+      <span class="talk-title"><%= item.title %></span>
+      <span class="talk-speaker"><%= item.speaker %></span>
+      <span class="talk-location"><%= templateParams.lang === 'en' ? (item.location_en || item.location) : item.location %></span>
+    </div>
+  </a>
+<% } %>
+</div>
+```

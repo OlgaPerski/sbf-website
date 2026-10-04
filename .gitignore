@@ -1,0 +1,12 @@
+.Rproj.user
+.Rhistory
+.RData
+.Ruserdata
+
+# Quarto
+/.quarto/
+/_site/
+**/*.quarto_ipynb
+
+# Local tooling
+.claude/

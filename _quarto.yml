@@ -1,0 +1,58 @@
+project:
+  type: website
+  output-dir: _site
+  resources:
+    - images/
+
+lang: sv
+
+website:
+  title: "Svensk Beteendemedicinsk Förening"
+  description: "Ett tvärvetenskapligt nätverk för forskare och kliniker inom beteendemedicin."
+  site-url: "https://olgaperski.github.io/sbf-website/"  # TODO: byt till egen domän om/när den finns
+  favicon: images/favicon.png
+  page-navigation: false
+  back-to-top-navigation: true
+  open-graph: true
+  navbar:
+    logo: images/logo-sbf.png
+    logo-alt: "Svensk Beteendemedicinsk Förening"
+    title: false
+    collapse-below: xl
+    left:
+      - href: om.qmd
+        text: Om oss
+      - href: lunchseminarier.qmd
+        text: Lunchseminarier
+      - href: nyheter.qmd
+        text: Nyheter
+      - href: medlemskap.qmd
+        text: Medlemskap
+      - href: resurser.qmd
+        text: Resurser
+      - href: kontakt.qmd
+        text: Kontakt
+    right:
+      # Language toggle: _lang-switch.html turns this into a link to the
+      # matching page in the other language (and relabels the menu on English pages)
+      - href: en/index.qmd
+        text: English
+      - icon: facebook
+        href: https://www.facebook.com/groups/121323624602350/
+        aria-label: Facebook
+  page-footer:
+    left: "© 2026 Svensk Beteendemedicinsk Förening · Swedish Society of Behavioural Medicine"
+    right:
+      - icon: facebook
+        href: https://www.facebook.com/groups/121323624602350/
+        aria-label: Facebook
+
+format:
+  html:
+    theme:
+      light: [cosmo, styles.scss]
+    toc: false
+    smooth-scroll: true
+    link-external-newwindow: true
+    link-external-icon: false
+    include-after-body: _lang-switch.html

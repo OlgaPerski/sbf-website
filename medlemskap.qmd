@@ -1,0 +1,31 @@
+---
+title: "Medlemskap"
+---
+
+Medlemskap i SBF är öppet för alla som arbetar med eller är intresserade av beteendemedicin: forskare, kliniker, doktorander och studenter.
+
+## Som medlem får du
+
+- inbjudningar till föreningens lunchseminarier och andra aktiviteter
+- nyhetsbrev med konferenser, utlysningar och kurser
+- ett nätverk av kollegor inom olika discipliner
+- möjlighet att påverka föreningens verksamhet via årsmötet
+
+::: {.todo}
+**TODO:** Bekräfta förmånerna ovan, t.ex. om medlemskap i SBF ger rabatt hos ISBM eller på konferenser.
+:::
+
+## Avgift
+
+| Kategori | Årsavgift |
+|---|---|
+| Ordinarie medlem | TODO kr |
+| Student / doktorand | TODO kr |
+
+## Så blir du medlem
+
+1. Fyll i [anmälningsformuläret](#){.todo-link} <!-- TODO: länk till formulär (t.ex. Google/Microsoft Forms) -->
+2. Betala avgiften till bankgiro/Swish **TODO** och ange ditt namn.
+3. Du får en bekräftelse via e-post.
+
+[Bli medlem](#){.btn-sbf}
